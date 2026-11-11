@@ -39,7 +39,10 @@ A aplicação divide-se em três camadas principais:
 
 ---
 
-<img width="391" height="757" alt="image" src="https://github.com/user-attachments/assets/007320b8-77a7-4b19-836e-6b44b224e460" />
+## 4. Imagens
+
+<img width="381" height="550" alt="Captura de tela 2026-11-11 155854" src="https://github.com/user-attachments/assets/7e864f67-90d7-4f69-aa29-b31c035f6037" />
+
 
 <img width="391" height="757" alt="image" src="https://github.com/user-attachments/assets/179041ab-ffbb-4f3f-9982-a6512f7a5793" />
 
