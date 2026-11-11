@@ -1,11 +1,41 @@
-# Sample Snack app
+# Aplicativo de Conversão de Moedas - React Native (MVVM)
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
+Aplicativo mobile desenvolvido em React Native utilizando JavaScript para consulta de taxas de câmbio de referência e conversão de moedas, consumindo os dados da API pública Frankfurter.
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo cli](https://docs.expo.dev/get-started/installation/#expo-cli)).
+O projeto foi estruturado seguindo o padrão de arquitetura MVVM (Model-View-ViewModel), com separação de responsabilidades entre interface visual, lógica de negócio e camada de acesso a dados.
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
+---
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.dev/c/expo-dev-tools/61) or [Discord](https://chat.expo.dev/).
+## 1. Arquitetura do Projeto (MVVM)
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
+A estrutura da aplicação é dividida nas três camadas principais:
+
+- **Model (`src/models/currencyModel.js`)**: Responsável exclusivo pela comunicação com a API Frankfurter. Realiza as requisições HTTP utilizando a Fetch API para os endpoints `/v2/currencies` e `/v2/rate/{from}/{to}`, tratando os retornos em formato JSON e capturando exceções de rede.
+- **ViewModel (`src/viewmodels/useCurrencyViewModel.js`)**: Implementado por meio de um Hook personalizado do React. Gerencia os estados da aplicação, executa as validações dos dados inseridos pelo usuário, calcula o valor convertido e coordena os estados de carregamento e erro.
+- **View (`src/views/CurrencyConverterView.js`)**: Camada de interface com o usuário construída com componentes nativos do React Native e a biblioteca `@react-native-picker/picker`. Apresenta os seletores, campos de entrada, botões, mensagens de orientação e cartões com os resultados obtidos da ViewModel.
+
+---
+
+## 2. Tecnologias Utilizadas
+
+- **React Native** (via Expo Framework)
+- **JavaScript (ES6+)**
+- **Frankfurter API (v2)**
+- **@react-native-picker/picker**
+
+---
+
+## 3. Estrutura de Pastas
+
+```text
+ConversorMoedas/
+├── src/
+│   ├── models/
+│   │   └── currencyModel.js
+│   ├── viewmodels/
+│   │   └── useCurrencyViewModel.js
+│   └── views/
+│       └── CurrencyConverterView.js
+├── App.js
+├── package.json
+└── README.md
