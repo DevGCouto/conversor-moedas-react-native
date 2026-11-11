@@ -39,6 +39,10 @@ A aplicação divide-se em três camadas principais:
 
 ---
 
+<img width="391" height="757" alt="image" src="https://github.com/user-attachments/assets/007320b8-77a7-4b19-836e-6b44b224e460" />
+
+<img width="391" height="757" alt="image" src="https://github.com/user-attachments/assets/179041ab-ffbb-4f3f-9982-a6512f7a5793" />
+
 ## 4. Estrutura de Pastas
 
 ```text
@@ -54,8 +58,6 @@ ConversorMoedas/
 ├── package.json                       # Dependências do projeto
 └── README.md                          # Documentação
 
-<img width="381" height="550" alt="image" src="https://github.com/user-attachments/assets/9f78d5f5-3f3e-43c1-b3b8-07750a0f949f" />
-<img width="391" height="757" alt="image" src="https://github.com/user-attachments/assets/a4617d8c-75a4-4812-be80-5a6fcd4953d3" />
 
 
 
